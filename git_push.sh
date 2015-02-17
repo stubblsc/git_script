@@ -4,7 +4,7 @@ if "$4" == "-b"
 then
   git checkout -b "$2"
 fi
-DIRS="$(find ./$1 -mindepth 1 -maxdepth 5 -type d)"
+DIRS="$(find $1 -mindepth 1 -maxdepth 5 -type d)"
 for d in $DIRS
 do
     cd $d
